@@ -20,7 +20,10 @@ jobs:
           yarn-version: latest
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: |
+          yarn install --frozen-lockfile
+          yarn add some-package
+          yarn add another-package
 
       - name: Setup Git
         run: |
