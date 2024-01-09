@@ -1,0 +1,20 @@
+name: ".github/workflows/main.yml"
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Dependencies
+        run: yarn install
+
+      - name: Generate Blog Posts
+        run: yarn run blog-posts:gen
