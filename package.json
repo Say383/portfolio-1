@@ -12,7 +12,7 @@
     "format": "prettier --check \"{components,data,pages,styles,utils,layouts}/**/*.{js,jsx,ts,tsx,css,scss,json,yaml,md}\"",
     "format:fix": "prettier --write \"{components,data,pages,styles,utils,layouts}/**/*.{js,jsx,ts,tsx,css,scss,json,yaml,md}\"",
     "types:check": "tsc --pretty --noEmit",
-    "gen:kprovider": "ts-node scripts/generate-kprovider-data.ts",
+    "blog-posts:gen": "your-command-here",
     "gen:hashnode": "ts-node scripts/gen-hashnode-data.ts"
   },
   "devDependencies": {
@@ -58,7 +58,7 @@
     "hamburger-react": "^2.5.0",
     "kbar": "^0.1.0-beta.34",
     "lqip-modern": "^1.2.0",
-    "mdx-bundler": "^9.0.0",
+    "blog-posts:gen": "ts-node scripts/gen-blog-posts.ts",
     "next": "^12.1.4",
     "next-contentlayer": "^0.2.4",
     "next-seo": "^5.4.0",
