@@ -1,4 +1,4 @@
-import { GetStaticProps, NextPage } from "next";
+import { NextPage } from "next";
 
 import { allBlogPosts, BlogPost } from "contentlayer/generated";
 import BlogPostCard from "@/components/BlogWIP/BlogPostCard";
