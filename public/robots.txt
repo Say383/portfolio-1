@@ -1,7 +1,8 @@
 # Allow all crawlers
-User-agent: *
+
 Allow: /
 
+User-agent: *
 User-agent: *
 Disallow: /revalidate
 
