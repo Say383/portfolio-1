@@ -28,8 +28,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Generate Blog data
-        run: |
-          echo 'Script execution: yarn blog-posts:gen' >> data.yml
+        run: yarn blog-posts:gen >> data.yml
           yarn format
 
       - name: Commit generated data
