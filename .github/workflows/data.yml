@@ -27,9 +27,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Generate Blog data
+      - name: Execute blog-posts-gen.sh
+      run: |
+        ./blog-posts-gen.sh
         run: |
-          yarn blog-posts:gen
+          ./blog-posts-gen.sh
           yarn format
 
       - name: Commit generated data
