@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "license": "GPL-3.0",
   "scripts": {
+    "blog-posts:gen": "ts-node scripts/generate-blog-posts.ts",
     "prepare": "husky install",
     "dev": "next dev",
     "build": "next build",
