@@ -29,6 +29,9 @@ jobs:
 
       - name: Generate Blog data
         run: |
+          # Add the new command here to generate the blog data
+          # For example, you can use `node generate-blog-data.js`
+        run: |
           yarn blog-posts:gen
           yarn format
 
