@@ -20,7 +20,9 @@ jobs:
           yarn-version: latest
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: |
+          yarn install --frozen-lockfile
+          yarn add -D blog-posts
 
       - name: Setup Git
         run: |
@@ -30,7 +32,6 @@ jobs:
       - name: Generate Blog data
         run: |
           yarn blog-posts:gen
-          yarn format
 
       - name: Commit generated data
         run: |
